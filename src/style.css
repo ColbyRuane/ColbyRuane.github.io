@@ -1,0 +1,316 @@
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter.ttc);
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+/* header with navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    color: hsl(167, 77%, 20%);
+    font-family: 'Inter';
+}
+.nav-container {
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    padding: 0.75rem;
+}
+.nav-container a{
+    text-decoration: none;
+    color: hsl(167, 77%, 20%);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.nav-container a:hover {
+    text-decoration: underline;
+}
+
+/* intro section */
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-obj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+    width: 80%;
+}
+.intro-obj-2 {
+    display: flex;
+    width: 30%;
+    margin: 1rem;
+}
+.intro-text {
+    padding: 2rem;
+}
+.intro-text h1 {
+    font-family: 'Inter';
+    font-size: 3.75rem;
+    margin-bottom: 0;
+}
+.intro-text h1 span {
+    color: hsl(167, 77%, 20%);
+}
+.intro-text p {
+    font-size: 1.75rem;
+    overflow: auto;
+}
+
+/* about section */
+.about-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.about-obj {
+    display: flex;
+    border: 0.1rem solid hsl(0, 0%, 25%);
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 70%;
+}
+.about-obj-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    margin: 1rem;
+}
+.about-text {
+    padding: 2rem;
+    max-width: 55%;
+    overflow: auto;
+}
+.about-text h2 {
+    font-family: 'Inter';
+    font-size: 1.75vw;
+}
+.about-text p {
+    font-size: 1vw;
+}
+.card {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
+    margin: 2rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden; 
+}
+#pic {
+    width: 100%;
+}
+.card h2 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+.card p a {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+#git {
+    padding-bottom: 0.4rem;
+}
+
+/* experience+leadership+projects section */
+.exp-container, .leader-container, .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exp-obj, .leader-obj, .projects-obj {
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid hsl(0, 0%, 25%);
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 55%;
+}
+.job-card, .leader-card, .projects-card {
+    background-color: hsl(0, 0%, 100%);
+}
+.job-info, .leader-info, .projects-info {
+    display: flex;
+    flex-direction: column;
+}
+.job-desc, .leader-desc, .projects-desc {
+    align-self: left;
+}
+.job-desc p,  .leader-desc p, .projects-desc p {
+    padding-left: 1rem;
+    margin-top: 0rem;
+}
+.job-desc p:nth-of-type(1), .leader-desc p:nth-of-type(1), .projects-desc p:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(167, 77%, 20%);
+}
+.job-desc p:nth-of-type(2), .leader-desc p:nth-of-type(2), .projects-desc p:nth-of-type(2) {
+    font-size: 1.1rem;
+}
+.logo {
+    padding: 1rem;
+    margin-bottom: 0rem;
+    align-self: center;
+}
+.skill-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.3rem;
+    background-color: hsl(162, 76%, 27%);
+    border-radius: 1rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+.desc-list li::marker {
+    color: hsl(167, 77%, 20%);
+}
+#resume-button {
+    font-family: 'Inter';
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: hsl(167, 77%, 27%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 1rem;
+    font-weight: bold;
+    align-self: center;
+    transition: background-color 0.25s;
+    cursor: pointer;
+}
+#resume-button:hover {
+    background-color: hsl(167, 77%, 20%);
+}
+
+/* Leadership section */
+#aoe-img {
+    border-radius: 50%;
+}
+.leader-obj-2 {
+    width: 65%;
+}
+
+/* Projects section */
+.projects-card {
+    margin-bottom: 1.5rem;
+}
+.projects-desc {
+    margin: 1rem;
+}
+
+/* Containers */
+.projects-obj, .leader-obj, .exp-obj, .about-obj {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.projects-obj-2, .leader-obj-2, .exp-obj-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+footer {
+    background-color: white;
+    color: hsl(167, 77%, 27%);
+    display: flex;
+    justify-content: center;
+}
+.footer-obj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.footer-obj p {
+    font-family: 'Inter';
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.projects-card, .leader-card, .job-card {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.projects-card, .leader-card, .job-card, .card {
+    transition: box-shadow 0.25s;
+}
+.projects-card, .leader-card, .job-card {
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.3);
+}
+
+h2 {
+    font-family: 'Inter';
+    font-size: 2rem;
+}
+
+/* border hover styling */
+.about-obj, .exp-obj, .projects-obj, .leader-obj {
+    transition: outline-width 0.05s ease-in;
+}
+.about-obj:hover, .exp-obj:hover, .projects-obj:hover, .leader-obj:hover {
+    outline: 0.15rem solid hsl(167, 77%, 27%);
+}
+
+.about-obj, .exp-obj, .projects-obj, .leader-obj {
+    background-color: hsl(0, 0%, 90%);
+}
+
+/* background image */
+body, footer {
+    background-image: url(data/grid.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* fade and translate styling */
+.fade-into-view {
+    opacity: 0;
+    transform: translateY(1.1rem);
+    transition: opacity 1.25s ease-in-out, transform 1.25s ease-in-out;
+}
+.fade-into-view.visible {
+    opacity: 1;
+    /* translate to original position */
+    transform: translateY(0);
+}
+
+.desc-list {
+    font-size: 1.25rem;
+}
+.skill-list li, #resume-button {
+    font-size: 1.25rem;
+}

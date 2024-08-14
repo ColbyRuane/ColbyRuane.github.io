@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colby Ruane - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navbar and intro -->
+    <div class="intro">
+        <header>
+            <h2 id="logo"><code>Colbeh</code></h2>
+            <div class="nav-container">
+                <a href="#about">About</a>
+                <a href="#exp">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#leader">Organizations</a>
+                <a href="#footer">Contact</a>
+            </div>
+        </header>
+
+        <section class="intro-container">
+            <div class="intro-obj">
+                <div class="intro-obj-2">
+                    <div class="intro-text fade-into-view">
+                        <h1>Hello! I am <span>Colby Ruane</span>.</h1>
+                        <p>I am a Computer Engineer and Professional Trombonist that welcomes new 
+                            and challenging experiences in Software Engineering and the Fine Arts. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <main>
+        <!-- About section with info card -->
+        <section class="about-container" id="about">
+            <div class="about-obj">
+                <div class="about-obj-2">
+                    <div class="card">
+                        <img src="data/card-pic.jpg" 
+                        alt="John Doe" 
+                        id="pic">
+                        <h2>Colby Ruane</h2>
+                        <p><a href="mailto:">colbyruane.business@gmail.com</a></p>
+                        <a href="https://www.linkedin.com/in/colbyruane/"
+                        target="_blank">
+                            <img src="data/linkedin.png" 
+                                alt="" 
+                                width="40px"></a>
+                        <a href="https://github.com/ColbyRuane"
+                        target="_blank">
+                            <img id="git" 
+                                src="data/github.png" 
+                                alt="" 
+                                width="30px"></a>
+                    </div>
+        
+                    <div class="about-text fade-into-view">
+                        <h2 class="subheader">Who Am I?</h2>
+                        <p>Greetings! I am Colby, a <b>Computer Engineer</b> based in Frisco, TX with experience in navigating 
+                            computer hardware and software from The University of Texas at Dallas.
+                        </p>
+                        <p>Over my undergraduate career, I've had the opportunity to design <b>embedded systems, front-end
+                            interfaces</b> and <b>software applications</b> through varied coursework. In my senior year, I had the
+                            privilege to develop a <b>machine-learning</b> software application for use in the electronics
+                            industry (see 'Experience')!
+                        </p>
+                        <p>I am also a musician, possessing more than a decade of experience with <b>music theory, 
+                            vocal performance</b> and <b>playing trombone</b>. I have participated in a wide variety of unique 
+                            music ensembles such as symphony orchestras, brass ensembles and jazz ensembles!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience section -->
+        <section class="exp-container" id="exp">
+            <div class="exp-obj">
+                <div class="exp-obj-2">
+                    <h2 class="subheader">Relevant Experience</h2>
+                    <div class="job-card">
+                        <div class="job-info">
+                            <img src="data/sms.png" 
+                                alt="SMS InfoComm" 
+                                width="350px" 
+                                height="100px" 
+                                class="logo">
+                            <div class="job-desc fade-into-view">
+                                <p><b>SMS InfoComm (UT Dallas Capstone) - Grapevine, TX</b></p>
+                                <p><i>Front-End Developer (September 2023 - May 2024)</i></p>
+                                <ul class="desc-list">
+                                    <li>Developed an embedded system that utilizes Object 
+                                        Recognition and Golden Template Comparison (GTC) to 
+                                        identify physical defects on motherboards with minimal 
+                                        human intervention</li>
+                                    <li>Created Graphical User Interface for an application that 
+                                        assists hardware engineers in navigating the motherboard 
+                                        inspection process at SMS InfoComm </li>
+                                    <li>Defined project requirements and goals for the team using 
+                                        the Waterfall Software Development Model</li>
+                                </ul>
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>PyQt</li>
+                                    <li>GitHub</li>
+                                    <li>Roboflow</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="resume-button">View My Resume</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects-container" id="projects">
+            <div class="projects-obj">
+                <div class="projects-obj-2">
+                    <h2 class="subheader">Here are my Favorite Projects!</h2>
+                    <div class="projects-card">
+                        <div class="projects-info">
+                            <div class="projects-desc fade-into-view">
+                                <p>Unwired Rewards (Human-Computer Interactions) - UT Dallas</p>
+                                <p><i>Front-End Developer (Fall 2023)</i></p>
+                                <ul class="desc-list">
+                                    <li>Crafted the Graphical User Interface for a Dart mobile application that helps users monitor and reduce their daily mobile device usage</li>
+                                    <li>Collaborated effectively with a team of software developers following the Design Thinking Process</li>
+                                    <li>Utilized GitHub for version control to ensure smooth and secure development of the mobile application</li>
+                                </ul>
+                                <ul class="skill-list">
+                                    <li>Dart</li>
+                                    <li>Flutter SDK</li>
+                                    <li>Android Studio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="projects-card">
+                        <div class="projects-info">
+                            <div class="projects-desc fade-into-view">
+                                <p>Phantasmagoria (Intro to Programming Video Games) - UT Dallas</p>
+                                <p><i>Game Developer (Spring 2024)</i></p>
+                                <ul class="desc-list">
+                                    <li>Designed a Third-Person, Open-World platformer using C# and the Unity Engine</li>
+                                    <li>Programmed 3D physics and collisions, enemy AI and character animations</li>
+                                    <li>Managed and maintained the project using Git, ensuring smooth collaboration among team members</li>
+                                </ul>
+                                <ul class="skill-list">
+                                    <li>Unity Engine</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership section -->
+        <section class="leader-container" id="leader">
+            <div class="leader-obj">
+                <div class="leader-obj-2">
+                    <h2 class="subheader">Leadership Experience</h2>
+                    <div class="leader-card">
+                        <div class="leader-info">
+                            <a href="https://aoedallas.carrd.co/"
+                            target="_blank"
+                            class="logo">
+                                <img src="data/aoe.jpg" 
+                                alt="AOE Dallas"
+                                id="aoe-img">
+                            </a>
+                            <div class="leader-desc fade-into-view">
+                                <p>Anime Orchestra Ensemble (AOE) - UT Dallas</p>
+                                <p><i>Officer, Section Leader (Fall 2020 - Spring 2024)</i></p>
+                                <ul class="desc-list">
+                                    <li>Conducted rehearsals for the brass section, ensuring preparedness 
+                                        and smooth integration with the rest of the orchestra</li>
+                                    <li>Upheld standards for accountability and responsibility for the 
+                                        orchestra through servant leadership</li>
+                                    <li>Evaluated newly arranged music for the brass section, providing 
+                                        constructive feedback and necessary adjustments</li>
+                                </ul>
+                                <ul class="skill-list">
+                                    <li>Servant Leadership</li>
+                                    <li>Trombone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-obj" id="footer">
+            <p>Author: Colby Ruane</p>
+            <small>(214) - 705 - 4143</small>
+            <small><a href="mailto:colbyruane.business@gmail.com">Email</a> for Inquiries</small>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
